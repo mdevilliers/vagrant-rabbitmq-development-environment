@@ -1,6 +1,8 @@
 #!/bin/bash
 export DEBIAN_FRONTEND=noninteractive 
 
+
+
 cat >> /etc/apt/sources.list <<EOL
 deb http://binaries.erlang-solutions.com/debian quantal contrib
 deb http://binaries.erlang-solutions.com/debian precise contrib
@@ -16,7 +18,7 @@ wget -O - http://binaries.erlang-solutions.com/debian/erlang_solutions.asc | apt
 
 apt-get update > /dev/null
 
-apt-get -y install mercurial zip xsltproc esl-erlang
+apt-get -y install make mercurial zip xsltproc esl-erlang
 
 cd /vagrant
 

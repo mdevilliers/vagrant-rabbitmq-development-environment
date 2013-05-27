@@ -8,10 +8,9 @@ Checks out the source code to /vagrant.
 To use
 ------
 
+vagrant box add precise64  http://files.vagrantup.com/precise64.box
 vagrant up
 
+vagrant halt
+vagrant up --no-provision
 
-Tested with
------------
-
-ubuntu-12.04.01
