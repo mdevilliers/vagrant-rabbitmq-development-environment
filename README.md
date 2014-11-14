@@ -13,9 +13,13 @@ To use
 
 vagrant up
 
-
-
 vagrant halt
 
 vagrant up --no-provision
 
+Notes
+-----
+
+erl_call not found
+
+The sym link in /usr/bin is broken in erlang 17 however erl_call is found in /usr/lib/erlang/lib/erl_interface-3.7.19/bin/erl_call 
