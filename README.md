@@ -5,17 +5,14 @@ Simple vagrant script for creating a development environment for rabbitmq plugin
 
 Checks out the source code to /vagrant.
 
-Uses the hashicorp/precise32 box (which you may already have)
+Uses the ubuntu/trusty64 box (which you may already have)
 
 To use
 ------
 
-
+```
 vagrant up
-
-vagrant halt
-
-vagrant up --no-provision
+```
 
 Notes
 -----
