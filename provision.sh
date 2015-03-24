@@ -6,16 +6,12 @@ sudo dpkg -i erlang-solutions_1.0_all.deb
 
 apt-get update > /dev/null
 
-apt-get -y install make mercurial zip xsltproc esl-erlang git
+apt-get -y install make zip xsltproc esl-erlang git
 
-cat >/etc/mercurial/hgrc <<-EOF
-		[trusted]
-		users = vagrant
-	EOF
 
 cd /vagrant
 
-hg clone http://hg.rabbitmq.com/rabbitmq-public-umbrella
+git clone https://github.com/rabbitmq/rabbitmq-public-umbrella.git
 
 cd rabbitmq-public-umbrella
 
